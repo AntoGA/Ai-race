@@ -1,0 +1,15 @@
+logLevel: info
+rtspDisable: no
+rtmpDisable: no
+hlsDisable: no
+webrtcDisable: no
+srtDisable: no
+rtspAddress: :8554
+rtmpAddress: :1935
+hlsAddress: :8888
+webrtcAddress: :8889
+srtAddress: :8890
+hlsVariant: lowLatency
+hlsAlwaysRemux: yes
+hlsSegmentCount: 7
+hlsSegmentDuration: 1s

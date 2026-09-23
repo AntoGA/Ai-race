@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+node_modules/
+.next/
+out/
+build/
+*.log
+.DS_Store
+tmp/
+nginx/certs/*
+!nginx/certs/.gitkeep
+data/
+.vscode/
+.idea/
