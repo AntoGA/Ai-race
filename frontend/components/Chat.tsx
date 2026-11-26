@@ -15,7 +15,10 @@ export default function Chat({ raceId }: { raceId: string }) {
     socket.on("chat:message", (msg) =>
       setMessages((prev) => [...prev.slice(-99), msg])
     );
-    return () => socket.disconnect();
+    return () => {
+      socket.disconnect();
+      if (socketRef.current === socket) socketRef.current = null;
+    };
   }, [raceId]);
 
   const send = () => {
